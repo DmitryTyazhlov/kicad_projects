@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name BP_15v_40v_200v-rescue)(type Legacy)(uri ${KIPRJMOD}/BP_15v_40v_200v-rescue.lib)(options "")(descr ""))
+)
