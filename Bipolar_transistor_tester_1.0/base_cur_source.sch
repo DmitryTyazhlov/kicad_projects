@@ -1,0 +1,968 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:AD8620 U?
+U 1 1 62842C08
+P 2450 2400
+F 0 "U?" H 2450 2767 50  0000 C CNN
+F 1 "AD822" H 2450 2676 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2450 2400 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf" H 2450 2400 50  0001 C CNN
+	1    2450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD8620 U?
+U 2 1 62842C0E
+P 2450 5000
+F 0 "U?" H 2450 4633 50  0000 C CNN
+F 1 "AD822" H 2450 4724 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2450 5000 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf" H 2450 5000 50  0001 C CNN
+	2    2450 5000
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:AD8620 U?
+U 3 1 62842C14
+P 1400 3800
+F 0 "U?" H 1358 3846 50  0000 L CNN
+F 1 "AD822" H 1358 3755 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 1400 3800 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf" H 1400 3800 50  0001 C CNN
+	3    1400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 62842C1A
+P 1300 3350
+F 0 "#PWR?" H 1300 3200 50  0001 C CNN
+F 1 "+15V" H 1315 3523 50  0000 C CNN
+F 2 "" H 1300 3350 50  0001 C CNN
+F 3 "" H 1300 3350 50  0001 C CNN
+	1    1300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3350 1300 3500
+$Comp
+L power:-15V #PWR?
+U 1 1 62842C21
+P 1300 4300
+F 0 "#PWR?" H 1300 4400 50  0001 C CNN
+F 1 "-15V" H 1315 4473 50  0000 C CNN
+F 2 "" H 1300 4300 50  0001 C CNN
+F 3 "" H 1300 4300 50  0001 C CNN
+	1    1300 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 4300 1300 4100
+$Comp
+L Device:R R?
+U 1 1 62842C28
+P 3900 2900
+F 0 "R?" H 3970 2946 50  0000 L CNN
+F 1 "1k 1%" H 3970 2855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3830 2900 50  0001 C CNN
+F 3 "~" H 3900 2900 50  0001 C CNN
+	1    3900 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62842C2E
+P 3900 1900
+F 0 "R?" H 3970 1946 50  0000 L CNN
+F 1 "1k 1%" H 3970 1855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3830 1900 50  0001 C CNN
+F 3 "~" H 3900 1900 50  0001 C CNN
+	1    3900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:AO3400A Q?
+U 1 1 62842C34
+P 3800 2400
+F 0 "Q?" H 4005 2446 50  0000 L CNN
+F 1 "AO3400A" H 4005 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4000 2325 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 3800 2400 50  0001 L CNN
+	1    3800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:AO3401A Q?
+U 1 1 62842C3A
+P 3950 5000
+F 0 "Q?" H 4155 4954 50  0000 L CNN
+F 1 "AO3401A" H 4155 5045 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4150 4925 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 3950 5000 50  0001 L CNN
+	1    3950 5000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62842C40
+P 3000 2400
+F 0 "R?" V 2793 2400 50  0000 C CNN
+F 1 "270" V 2884 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2930 2400 50  0001 C CNN
+F 3 "~" H 3000 2400 50  0001 C CNN
+	1    3000 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N47xxA D?
+U 1 1 62842C46
+P 3300 2650
+F 0 "D?" V 3254 2730 50  0000 L CNN
+F 1 "1N4740A" V 3345 2730 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3300 2475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 3300 2650 50  0001 C CNN
+	1    3300 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 2400 2750 2400
+Wire Wire Line
+	3300 2500 3300 2400
+Wire Wire Line
+	3300 2400 3150 2400
+Wire Wire Line
+	3600 2400 3300 2400
+Connection ~ 3300 2400
+Wire Wire Line
+	3900 2750 3900 2700
+$Comp
+L power:GND #PWR?
+U 1 1 62842C52
+P 3900 3150
+F 0 "#PWR?" H 3900 2900 50  0001 C CNN
+F 1 "GND" H 3905 2977 50  0000 C CNN
+F 2 "" H 3900 3150 50  0001 C CNN
+F 3 "" H 3900 3150 50  0001 C CNN
+	1    3900 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3150 3900 3050
+Wire Wire Line
+	3900 2700 3750 2700
+Connection ~ 3900 2700
+Wire Wire Line
+	3900 2700 3900 2600
+$Comp
+L Device:R R?
+U 1 1 62842C5C
+P 3050 5000
+F 0 "R?" V 2843 5000 50  0000 C CNN
+F 1 "270" V 2934 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2980 5000 50  0001 C CNN
+F 3 "~" H 3050 5000 50  0001 C CNN
+	1    3050 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N47xxA D?
+U 1 1 62842C62
+P 3450 4750
+F 0 "D?" V 3404 4670 50  0000 R CNN
+F 1 "1N4740A" V 3495 4670 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3450 4575 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 3450 4750 50  0001 C CNN
+	1    3450 4750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2750 5000 2900 5000
+$Comp
+L Device:R R?
+U 1 1 62842C69
+P 4050 4500
+F 0 "R?" H 4120 4546 50  0000 L CNN
+F 1 "1k 1%" H 4120 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3980 4500 50  0001 C CNN
+F 3 "~" H 4050 4500 50  0001 C CNN
+	1    4050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 62842C6F
+P 3900 1550
+F 0 "#PWR?" H 3900 1400 50  0001 C CNN
+F 1 "+15V" H 3915 1723 50  0000 C CNN
+F 2 "" H 3900 1550 50  0001 C CNN
+F 3 "" H 3900 1550 50  0001 C CNN
+	1    3900 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1550 3900 1750
+$Comp
+L Device:R R?
+U 1 1 62842C76
+P 4050 5500
+F 0 "R?" H 4120 5546 50  0000 L CNN
+F 1 "1k 1%" H 4120 5455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3980 5500 50  0001 C CNN
+F 3 "~" H 4050 5500 50  0001 C CNN
+	1    4050 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62842C7C
+P 4350 4200
+F 0 "#PWR?" H 4350 3950 50  0001 C CNN
+F 1 "GND" H 4355 4027 50  0000 C CNN
+F 2 "" H 4350 4200 50  0001 C CNN
+F 3 "" H 4350 4200 50  0001 C CNN
+	1    4350 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4200 4350 4100
+Wire Wire Line
+	4350 4100 4050 4100
+Wire Wire Line
+	4050 4100 4050 4350
+$Comp
+L power:-15V #PWR?
+U 1 1 62842C85
+P 4050 5950
+F 0 "#PWR?" H 4050 6050 50  0001 C CNN
+F 1 "-15V" H 4065 6123 50  0000 C CNN
+F 2 "" H 4050 5950 50  0001 C CNN
+F 3 "" H 4050 5950 50  0001 C CNN
+	1    4050 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 5650 4050 5950
+Wire Wire Line
+	2150 5100 1950 5100
+Wire Wire Line
+	1950 5100 1950 2300
+Wire Wire Line
+	1950 2300 2150 2300
+$Comp
+L Device:R R?
+U 1 1 62842C8F
+P 1600 2500
+F 0 "R?" H 1670 2546 50  0000 L CNN
+F 1 "100k" H 1670 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1530 2500 50  0001 C CNN
+F 3 "~" H 1600 2500 50  0001 C CNN
+	1    1600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62842C95
+P 1600 2800
+F 0 "#PWR?" H 1600 2550 50  0001 C CNN
+F 1 "GND" H 1605 2627 50  0000 C CNN
+F 2 "" H 1600 2800 50  0001 C CNN
+F 3 "" H 1600 2800 50  0001 C CNN
+	1    1600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2800 1600 2650
+Wire Wire Line
+	1950 2300 1600 2300
+Wire Wire Line
+	1600 2300 1600 2350
+Connection ~ 1950 2300
+Text HLabel 1300 2300 0    50   Input ~ 0
+dac_in
+Wire Wire Line
+	1300 2300 1600 2300
+Connection ~ 1600 2300
+$Comp
+L Amplifier_Operational:OPA454 IC?
+U 1 1 62842CA3
+P 5350 5100
+AR Path="/625CBC7B/62842CA3" Ref="IC?"  Part="1" 
+AR Path="/62558810/62842CA3" Ref="IC?"  Part="1" 
+F 0 "IC?" H 5525 5350 50  0000 L CNN
+F 1 "OPA454" H 5525 5250 50  0000 L CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5350 5100 50  0001 L BNN
+F 3 "" H 5350 5100 50  0001 L BNN
+F 4 "296-22997-5-ND" H 5350 5100 50  0001 L BNN "PARTNUM"
+	1    5350 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62842CA9
+P 5450 4300
+AR Path="/625CBC7B/62842CA9" Ref="R?"  Part="1" 
+AR Path="/62558810/62842CA9" Ref="R?"  Part="1" 
+F 0 "R?" H 5520 4346 50  0000 L CNN
+F 1 "50k" H 5520 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5380 4300 50  0001 C CNN
+F 3 "~" H 5450 4300 50  0001 C CNN
+	1    5450 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4450 5450 4650
+$Comp
+L power:+24V #PWR?
+U 1 1 62842CB0
+P 5450 4100
+F 0 "#PWR?" H 5450 3950 50  0001 C CNN
+F 1 "+24V" H 5465 4273 50  0000 C CNN
+F 2 "" H 5450 4100 50  0001 C CNN
+F 3 "" H 5450 4100 50  0001 C CNN
+	1    5450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4100 5450 4150
+$Comp
+L power:+24V #PWR?
+U 1 1 62842CB7
+P 5150 4350
+F 0 "#PWR?" H 5150 4200 50  0001 C CNN
+F 1 "+24V" H 5165 4523 50  0000 C CNN
+F 2 "" H 5150 4350 50  0001 C CNN
+F 3 "" H 5150 4350 50  0001 C CNN
+	1    5150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4350 5150 4600
+$Comp
+L power:-24V #PWR?
+U 1 1 62842CBE
+P 5150 5750
+F 0 "#PWR?" H 5150 5850 50  0001 C CNN
+F 1 "-24V" H 5165 5923 50  0000 C CNN
+F 2 "" H 5150 5750 50  0001 C CNN
+F 3 "" H 5150 5750 50  0001 C CNN
+	1    5150 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5150 5750 5150 5600
+$Comp
+L power:-24V #PWR?
+U 1 1 62842CC5
+P 5450 5600
+F 0 "#PWR?" H 5450 5700 50  0001 C CNN
+F 1 "-24V" H 5465 5773 50  0000 C CNN
+F 2 "" H 5450 5600 50  0001 C CNN
+F 3 "" H 5450 5600 50  0001 C CNN
+	1    5450 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 5600 5450 5400
+$Comp
+L Diode:1N47xxA D?
+U 1 1 62842CCC
+P 5700 4650
+AR Path="/625CBC7B/62842CCC" Ref="D?"  Part="1" 
+AR Path="/62558810/62842CCC" Ref="D?"  Part="1" 
+F 0 "D?" H 5700 4867 50  0000 C CNN
+F 1 "1N4731A" H 5700 4776 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5700 4475 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 5700 4650 50  0001 C CNN
+	1    5700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4650 5450 4650
+Connection ~ 5450 4650
+Wire Wire Line
+	5450 4650 5450 4800
+$Comp
+L power:-24V #PWR?
+U 1 1 62842CD5
+P 6000 4650
+F 0 "#PWR?" H 6000 4750 50  0001 C CNN
+F 1 "-24V" H 6015 4823 50  0000 C CNN
+F 2 "" H 6000 4650 50  0001 C CNN
+F 3 "" H 6000 4650 50  0001 C CNN
+	1    6000 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 4650 5850 4650
+$Comp
+L Amplifier_Operational:OPA454 IC?
+U 1 1 62842CDD
+P 5350 2500
+AR Path="/625CBC7B/62842CDD" Ref="IC?"  Part="1" 
+AR Path="/62558810/62842CDD" Ref="IC?"  Part="1" 
+F 0 "IC?" H 5525 2750 50  0000 L CNN
+F 1 "OPA454" H 5525 2650 50  0000 L CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5350 2500 50  0001 L BNN
+F 3 "" H 5350 2500 50  0001 L BNN
+F 4 "296-22997-5-ND" H 5350 2500 50  0001 L BNN "PARTNUM"
+	1    5350 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62842CE3
+P 5450 1700
+AR Path="/625CBC7B/62842CE3" Ref="R?"  Part="1" 
+AR Path="/62558810/62842CE3" Ref="R?"  Part="1" 
+F 0 "R?" H 5520 1746 50  0000 L CNN
+F 1 "50k" H 5520 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5380 1700 50  0001 C CNN
+F 3 "~" H 5450 1700 50  0001 C CNN
+	1    5450 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1850 5450 2050
+$Comp
+L power:+24V #PWR?
+U 1 1 62842CEA
+P 5450 1500
+F 0 "#PWR?" H 5450 1350 50  0001 C CNN
+F 1 "+24V" H 5465 1673 50  0000 C CNN
+F 2 "" H 5450 1500 50  0001 C CNN
+F 3 "" H 5450 1500 50  0001 C CNN
+	1    5450 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1500 5450 1550
+$Comp
+L power:+24V #PWR?
+U 1 1 62842CF1
+P 5150 1750
+F 0 "#PWR?" H 5150 1600 50  0001 C CNN
+F 1 "+24V" H 5165 1923 50  0000 C CNN
+F 2 "" H 5150 1750 50  0001 C CNN
+F 3 "" H 5150 1750 50  0001 C CNN
+	1    5150 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1750 5150 2000
+$Comp
+L power:-24V #PWR?
+U 1 1 62842CF8
+P 5150 3150
+F 0 "#PWR?" H 5150 3250 50  0001 C CNN
+F 1 "-24V" H 5165 3323 50  0000 C CNN
+F 2 "" H 5150 3150 50  0001 C CNN
+F 3 "" H 5150 3150 50  0001 C CNN
+	1    5150 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5150 3150 5150 3000
+$Comp
+L power:-24V #PWR?
+U 1 1 62842CFF
+P 5450 3000
+F 0 "#PWR?" H 5450 3100 50  0001 C CNN
+F 1 "-24V" H 5465 3173 50  0000 C CNN
+F 2 "" H 5450 3000 50  0001 C CNN
+F 3 "" H 5450 3000 50  0001 C CNN
+	1    5450 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 3000 5450 2800
+$Comp
+L Diode:1N47xxA D?
+U 1 1 62842D06
+P 5700 2050
+AR Path="/625CBC7B/62842D06" Ref="D?"  Part="1" 
+AR Path="/62558810/62842D06" Ref="D?"  Part="1" 
+F 0 "D?" H 5700 2267 50  0000 C CNN
+F 1 "1N4731A" H 5700 2176 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5700 1875 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 5700 2050 50  0001 C CNN
+	1    5700 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2050 5450 2050
+Connection ~ 5450 2050
+Wire Wire Line
+	5450 2050 5450 2200
+$Comp
+L power:-24V #PWR?
+U 1 1 62842D0F
+P 6000 2050
+F 0 "#PWR?" H 6000 2150 50  0001 C CNN
+F 1 "-24V" H 6015 2223 50  0000 C CNN
+F 2 "" H 6000 2050 50  0001 C CNN
+F 3 "" H 6000 2050 50  0001 C CNN
+	1    6000 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 2050 5850 2050
+$Comp
+L Relay_SolidState:PVN012 D?
+U 1 1 62842D16
+P 7200 2200
+F 0 "D?" V 7246 2020 50  0000 R CNN
+F 1 "PVN012" V 7155 2020 50  0000 R CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 7220 2400 50  0001 C CNN
+F 3 "" H 7220 2400 50  0001 C CNN
+	1    7200 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay_SolidState:PVN012 D?
+U 1 1 62842D1C
+P 8600 2200
+F 0 "D?" V 8646 2020 50  0000 R CNN
+F 1 "PVN012" V 8555 2020 50  0000 R CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 8620 2400 50  0001 C CNN
+F 3 "" H 8620 2400 50  0001 C CNN
+	1    8600 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay_SolidState:PVN012 D?
+U 1 1 62842D22
+P 9950 2200
+F 0 "D?" V 9996 2020 50  0000 R CNN
+F 1 "PVN012" V 9905 2020 50  0000 R CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 9970 2400 50  0001 C CNN
+F 3 "" H 9970 2400 50  0001 C CNN
+	1    9950 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62842D28
+P 6650 2200
+AR Path="/62558810/62842D28" Ref="R?"  Part="1" 
+AR Path="/625CBCFC/62842D28" Ref="R?"  Part="1" 
+F 0 "R?" H 6720 2246 50  0000 L CNN
+F 1 "100 1%" H 6720 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6580 2200 50  0001 C CNN
+F 3 "~" H 6650 2200 50  0001 C CNN
+	1    6650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62842D2E
+P 8050 2200
+AR Path="/62558810/62842D2E" Ref="R?"  Part="1" 
+AR Path="/625CBCFC/62842D2E" Ref="R?"  Part="1" 
+F 0 "R?" H 8120 2246 50  0000 L CNN
+F 1 "50k 1%" H 8120 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7980 2200 50  0001 C CNN
+F 3 "~" H 8050 2200 50  0001 C CNN
+	1    8050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62842D34
+P 9400 2200
+AR Path="/62558810/62842D34" Ref="R?"  Part="1" 
+AR Path="/625CBCFC/62842D34" Ref="R?"  Part="1" 
+F 0 "R?" H 9470 2246 50  0000 L CNN
+F 1 "10M 1%" H 9470 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9330 2200 50  0001 C CNN
+F 3 "~" H 9400 2200 50  0001 C CNN
+	1    9400 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5000 3450 5000
+Wire Wire Line
+	4050 4650 4050 4750
+Wire Wire Line
+	3450 4900 3450 5000
+Connection ~ 3450 5000
+Wire Wire Line
+	3450 5000 3750 5000
+Wire Wire Line
+	4050 4750 3900 4750
+Wire Wire Line
+	3900 4500 3450 4500
+Wire Wire Line
+	2150 4500 2150 4900
+Wire Wire Line
+	3900 4500 3900 4750
+Connection ~ 4050 4750
+Wire Wire Line
+	4050 4750 4050 4800
+Wire Wire Line
+	3450 4600 3450 4500
+Connection ~ 3450 4500
+Wire Wire Line
+	3450 4500 2150 4500
+Wire Wire Line
+	3750 2700 3750 3000
+Wire Wire Line
+	3750 3000 3300 3000
+Wire Wire Line
+	2150 3000 2150 2500
+Wire Wire Line
+	3300 2800 3300 3000
+Connection ~ 3300 3000
+Wire Wire Line
+	3300 3000 2150 3000
+Wire Wire Line
+	3900 2050 3900 2150
+Wire Wire Line
+	4950 2600 4400 2600
+Wire Wire Line
+	4400 2600 4400 2150
+Wire Wire Line
+	4400 2150 3900 2150
+Connection ~ 3900 2150
+Wire Wire Line
+	3900 2150 3900 2200
+Wire Wire Line
+	4050 5200 4050 5300
+Wire Wire Line
+	4950 5200 4450 5200
+Wire Wire Line
+	4450 5200 4450 5300
+Wire Wire Line
+	4450 5300 4050 5300
+Connection ~ 4050 5300
+Wire Wire Line
+	4050 5300 4050 5350
+Wire Wire Line
+	9400 2350 9400 2950
+Wire Wire Line
+	9400 2950 8050 2950
+Wire Wire Line
+	8050 2950 8050 2350
+Wire Wire Line
+	8050 2950 7550 2950
+Connection ~ 8050 2950
+Wire Wire Line
+	4900 1100 4900 2400
+Wire Wire Line
+	4900 2400 4950 2400
+Wire Wire Line
+	6650 2050 6650 1900
+Wire Wire Line
+	6650 1900 7100 1900
+Wire Wire Line
+	8050 2050 8050 1900
+Wire Wire Line
+	8050 1900 8500 1900
+Wire Wire Line
+	9400 2050 9400 1900
+Wire Wire Line
+	9400 1900 9850 1900
+NoConn ~ 8600 1900
+NoConn ~ 7200 1900
+NoConn ~ 9950 1900
+Wire Wire Line
+	7300 1900 7300 1750
+Wire Wire Line
+	7300 1750 8700 1750
+Wire Wire Line
+	8700 1750 8700 1900
+Wire Wire Line
+	8700 1750 10050 1750
+Wire Wire Line
+	10050 1750 10050 1900
+Connection ~ 8700 1750
+$Comp
+L power:+24V #PWR?
+U 1 1 62842D70
+P 10050 1600
+F 0 "#PWR?" H 10050 1450 50  0001 C CNN
+F 1 "+24V" H 10065 1773 50  0000 C CNN
+F 2 "" H 10050 1600 50  0001 C CNN
+F 3 "" H 10050 1600 50  0001 C CNN
+	1    10050 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 1750 10050 1600
+Connection ~ 10050 1750
+$Comp
+L Relay_SolidState:PVN012 D?
+U 1 1 62842D78
+P 7200 5300
+F 0 "D?" V 7246 5120 50  0000 R CNN
+F 1 "PVN012" V 7155 5120 50  0000 R CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 7220 5500 50  0001 C CNN
+F 3 "" H 7220 5500 50  0001 C CNN
+	1    7200 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L Relay_SolidState:PVN012 D?
+U 1 1 62842D7E
+P 8600 5300
+F 0 "D?" V 8646 5120 50  0000 R CNN
+F 1 "PVN012" V 8555 5120 50  0000 R CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 8620 5500 50  0001 C CNN
+F 3 "" H 8620 5500 50  0001 C CNN
+	1    8600 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L Relay_SolidState:PVN012 D?
+U 1 1 62842D84
+P 9950 5300
+F 0 "D?" V 9996 5120 50  0000 R CNN
+F 1 "PVN012" V 9905 5120 50  0000 R CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 9970 5500 50  0001 C CNN
+F 3 "" H 9970 5500 50  0001 C CNN
+	1    9950 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62842D8A
+P 6650 5300
+AR Path="/62558810/62842D8A" Ref="R?"  Part="1" 
+AR Path="/625CBCFC/62842D8A" Ref="R?"  Part="1" 
+F 0 "R?" H 6580 5254 50  0000 R CNN
+F 1 "100 1%" H 6580 5345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6580 5300 50  0001 C CNN
+F 3 "~" H 6650 5300 50  0001 C CNN
+	1    6650 5300
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62842D90
+P 8050 5300
+AR Path="/62558810/62842D90" Ref="R?"  Part="1" 
+AR Path="/625CBCFC/62842D90" Ref="R?"  Part="1" 
+F 0 "R?" H 7981 5254 50  0000 R CNN
+F 1 "50k 1%" H 7981 5345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7980 5300 50  0001 C CNN
+F 3 "~" H 8050 5300 50  0001 C CNN
+	1    8050 5300
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62842D96
+P 9400 5300
+AR Path="/62558810/62842D96" Ref="R?"  Part="1" 
+AR Path="/625CBCFC/62842D96" Ref="R?"  Part="1" 
+F 0 "R?" H 9331 5254 50  0000 R CNN
+F 1 "10M 1%" H 9331 5345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9330 5300 50  0001 C CNN
+F 3 "~" H 9400 5300 50  0001 C CNN
+	1    9400 5300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9400 5150 9400 4550
+Wire Wire Line
+	9400 4550 8050 4550
+Wire Wire Line
+	8050 4550 8050 5150
+Wire Wire Line
+	8050 4550 7550 4550
+Connection ~ 8050 4550
+Wire Wire Line
+	6650 5450 6650 5600
+Wire Wire Line
+	6650 5600 7100 5600
+Wire Wire Line
+	8050 5450 8050 5600
+Wire Wire Line
+	8050 5600 8500 5600
+Wire Wire Line
+	9400 5450 9400 5600
+Wire Wire Line
+	9400 5600 9850 5600
+NoConn ~ 8600 5600
+NoConn ~ 7200 5600
+NoConn ~ 9950 5600
+Wire Wire Line
+	7300 5600 7300 5750
+Wire Wire Line
+	7300 5750 8700 5750
+Wire Wire Line
+	8700 5750 8700 5600
+Wire Wire Line
+	8700 5750 10050 5750
+Wire Wire Line
+	10050 5750 10050 5600
+Connection ~ 8700 5750
+Connection ~ 10050 5750
+Wire Wire Line
+	6650 2350 6650 2650
+Wire Wire Line
+	6650 4550 6650 5050
+Wire Wire Line
+	4800 5000 4950 5000
+Wire Wire Line
+	6250 2650 6250 1100
+Connection ~ 6650 2650
+Wire Wire Line
+	6650 2650 6650 2950
+Wire Wire Line
+	4900 1100 6250 1100
+$Comp
+L power:-24V #PWR?
+U 1 1 62842DB8
+P 10050 6100
+F 0 "#PWR?" H 10050 6200 50  0001 C CNN
+F 1 "-24V" H 10065 6273 50  0000 C CNN
+F 2 "" H 10050 6100 50  0001 C CNN
+F 3 "" H 10050 6100 50  0001 C CNN
+	1    10050 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10050 5750 10050 6100
+Wire Wire Line
+	4800 5000 4800 6300
+Wire Wire Line
+	6350 6300 6350 5050
+Wire Wire Line
+	6350 5050 6650 5050
+Wire Wire Line
+	4800 6300 6350 6300
+Connection ~ 6650 5050
+Wire Wire Line
+	6650 5050 6650 5150
+$Comp
+L Transistor_FET:AO3400A Q?
+U 1 1 62842DC5
+P 7950 4050
+F 0 "Q?" H 8155 4096 50  0000 L CNN
+F 1 "AO3400A" H 8155 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8150 3975 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 7950 4050 50  0001 L CNN
+	1    7950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:AO3401A Q?
+U 1 1 62842DCB
+P 7950 3450
+F 0 "Q?" H 8155 3404 50  0000 L CNN
+F 1 "AO3401A" H 8155 3495 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8150 3375 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 7950 3450 50  0001 L CNN
+	1    7950 3450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8050 3650 8050 3750
+Wire Wire Line
+	6250 2650 6650 2650
+Wire Wire Line
+	8050 3250 8050 2950
+Wire Wire Line
+	8050 4250 8050 4550
+$Comp
+L Device:R R?
+U 1 1 62842DD5
+P 7200 4050
+F 0 "R?" V 6993 4050 50  0000 C CNN
+F 1 "270" V 7084 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7130 4050 50  0001 C CNN
+F 3 "~" H 7200 4050 50  0001 C CNN
+	1    7200 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62842DDB
+P 7200 3450
+F 0 "R?" V 6993 3450 50  0000 C CNN
+F 1 "270" V 7084 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7130 3450 50  0001 C CNN
+F 3 "~" H 7200 3450 50  0001 C CNN
+	1    7200 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N47xxA D?
+U 1 1 62842DE1
+P 7550 4300
+F 0 "D?" V 7504 4380 50  0000 L CNN
+F 1 "1N4740A" V 7595 4380 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7550 4125 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 7550 4300 50  0001 C CNN
+	1    7550 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N47xxA D?
+U 1 1 62842DE7
+P 7550 3150
+F 0 "D?" V 7596 3070 50  0000 R CNN
+F 1 "1N4740A" V 7505 3070 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7550 2975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 7550 3150 50  0001 C CNN
+	1    7550 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 3000 7550 2950
+Connection ~ 7550 2950
+Wire Wire Line
+	7550 2950 6650 2950
+Wire Wire Line
+	7550 3300 7550 3450
+Wire Wire Line
+	7550 3450 7750 3450
+Wire Wire Line
+	7550 3450 7350 3450
+Connection ~ 7550 3450
+Wire Wire Line
+	7550 4450 7550 4550
+Connection ~ 7550 4550
+Wire Wire Line
+	7550 4550 6650 4550
+Wire Wire Line
+	7750 4050 7550 4050
+Wire Wire Line
+	7550 4050 7550 4150
+Wire Wire Line
+	7350 4050 7550 4050
+Connection ~ 7550 4050
+Wire Wire Line
+	7050 4050 6200 4050
+Wire Wire Line
+	6200 4050 6200 5100
+Wire Wire Line
+	6200 5100 5750 5100
+Wire Wire Line
+	7050 3450 5950 3450
+Wire Wire Line
+	5950 3450 5950 2500
+Wire Wire Line
+	5950 2500 5750 2500
+Text HLabel 9950 3750 2    50   Output ~ 0
+out
+Wire Wire Line
+	9950 3750 8050 3750
+Connection ~ 8050 3750
+Wire Wire Line
+	8050 3750 8050 3850
+$EndSCHEMATC

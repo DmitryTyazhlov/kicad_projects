@@ -1,0 +1,246 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:AD549 U?
+U 1 1 6260AE8E
+P 5875 3275
+F 0 "U?" H 5925 3525 50  0000 L CNN
+F 1 "AD549" H 5925 3425 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-99-8" H 6035 3465 50  0001 C CNN
+F 3 "" H 6035 3465 50  0001 C CNN
+	1    5875 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6260CC45
+P 6525 3275
+F 0 "R?" V 6318 3275 50  0000 C CNN
+F 1 "100" V 6409 3275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6455 3275 50  0001 C CNN
+F 3 "~" H 6525 3275 50  0001 C CNN
+	1    6525 3275
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6260D733
+P 6775 3525
+F 0 "C?" H 6890 3571 50  0000 L CNN
+F 1 "100p" H 6890 3480 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6813 3375 50  0001 C CNN
+F 3 "~" H 6775 3525 50  0001 C CNN
+	1    6775 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6775 3375 6775 3275
+Wire Wire Line
+	6775 3275 6675 3275
+$Comp
+L power:+15V #PWR?
+U 1 1 6260EAF5
+P 5775 2875
+F 0 "#PWR?" H 5775 2725 50  0001 C CNN
+F 1 "+15V" H 5790 3048 50  0000 C CNN
+F 2 "" H 5775 2875 50  0001 C CNN
+F 3 "" H 5775 2875 50  0001 C CNN
+	1    5775 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5775 2875 5775 2975
+$Comp
+L power:-15V #PWR?
+U 1 1 6260F329
+P 5775 3700
+F 0 "#PWR?" H 5775 3800 50  0001 C CNN
+F 1 "-15V" H 5790 3873 50  0000 C CNN
+F 2 "" H 5775 3700 50  0001 C CNN
+F 3 "" H 5775 3700 50  0001 C CNN
+	1    5775 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5775 3700 5775 3575
+$Comp
+L power:GND #PWR?
+U 1 1 6260FFB6
+P 6775 3825
+F 0 "#PWR?" H 6775 3575 50  0001 C CNN
+F 1 "GND" H 6780 3652 50  0000 C CNN
+F 2 "" H 6775 3825 50  0001 C CNN
+F 3 "" H 6775 3825 50  0001 C CNN
+	1    6775 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6775 3825 6775 3675
+Text HLabel 7025 3275 2    50   Output ~ 0
+adc
+Wire Wire Line
+	7025 3275 6775 3275
+Connection ~ 6775 3275
+$Comp
+L Relay_SolidState:FOD420 U?
+U 1 1 6262C06E
+P 4850 4725
+F 0 "U?" H 4850 5050 50  0000 C CNN
+F 1 "PVN012" H 4850 4959 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 4650 4525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/FOD4218-D.PDF" H 4850 4725 50  0001 L CNN
+	1    4850 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay_SolidState:FOD420 U?
+U 1 1 62630D8A
+P 5475 5500
+F 0 "U?" H 5475 5825 50  0000 C CNN
+F 1 "PVN012" H 5475 5734 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 5275 5300 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/FOD4218-D.PDF" H 5475 5500 50  0001 L CNN
+	1    5475 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62637A7E
+P 5575 5075
+F 0 "R?" V 5368 5075 50  0000 C CNN
+F 1 "10M 1%" V 5459 5075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5505 5075 50  0001 C CNN
+F 3 "~" H 5575 5075 50  0001 C CNN
+	1    5575 5075
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62637E42
+P 6000 5075
+F 0 "R?" V 5793 5075 50  0000 C CNN
+F 1 "10M 1%" V 5884 5075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5930 5075 50  0001 C CNN
+F 3 "~" H 6000 5075 50  0001 C CNN
+	1    6000 5075
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62638362
+P 5775 5875
+F 0 "R?" V 5568 5875 50  0000 C CNN
+F 1 "100k 1%" V 5659 5875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5705 5875 50  0001 C CNN
+F 3 "~" H 5775 5875 50  0001 C CNN
+	1    5775 5875
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 626386FD
+P 5775 6100
+F 0 "#PWR?" H 5775 5850 50  0001 C CNN
+F 1 "GND" H 5780 5927 50  0000 C CNN
+F 2 "" H 5775 6100 50  0001 C CNN
+F 3 "" H 5775 6100 50  0001 C CNN
+	1    5775 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5775 6100 5775 6025
+$Comp
+L Device:C C?
+U 1 1 626398F0
+P 5775 4250
+F 0 "C?" H 5890 4296 50  0000 L CNN
+F 1 "C" H 5890 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5813 4100 50  0001 C CNN
+F 3 "~" H 5775 4250 50  0001 C CNN
+	1    5775 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5725 5075 5775 5075
+Wire Wire Line
+	5775 5600 5775 5725
+Wire Wire Line
+	5775 5400 5775 5075
+Connection ~ 5775 5075
+Wire Wire Line
+	5775 5075 5850 5075
+Wire Wire Line
+	5425 5075 5375 5075
+Wire Wire Line
+	6275 5075 6150 5075
+$Comp
+L Device:R R?
+U 1 1 62644CAF
+P 5775 4625
+F 0 "R?" V 5568 4625 50  0000 C CNN
+F 1 "1k 1%" V 5659 4625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5705 4625 50  0001 C CNN
+F 3 "~" H 5775 4625 50  0001 C CNN
+	1    5775 4625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5925 4625 6275 4625
+Connection ~ 6275 4625
+Wire Wire Line
+	6275 4625 6275 5075
+Wire Wire Line
+	5625 4625 5150 4625
+Wire Wire Line
+	5925 4250 6275 4250
+Wire Wire Line
+	6275 4250 6275 4625
+Wire Wire Line
+	5625 4250 5375 4250
+Wire Wire Line
+	5375 4250 5375 5075
+Connection ~ 5375 5075
+Wire Wire Line
+	6175 3275 6275 3275
+Wire Wire Line
+	5150 4825 5275 4825
+Wire Wire Line
+	5275 4825 5275 5075
+Wire Wire Line
+	5275 5075 5375 5075
+Wire Wire Line
+	6275 4250 6275 3275
+Connection ~ 6275 4250
+Connection ~ 6275 3275
+Wire Wire Line
+	6275 3275 6375 3275
+Wire Wire Line
+	5375 4250 5375 3375
+Wire Wire Line
+	5375 3375 5575 3375
+Connection ~ 5375 4250
+Text HLabel 5100 3375 0    50   Input ~ 0
+in-
+Wire Wire Line
+	5100 3375 5375 3375
+Connection ~ 5375 3375
+Wire Wire Line
+	5575 3175 5575 2950
+Text HLabel 5125 2950 0    50   Input ~ 0
+in+
+Wire Wire Line
+	5125 2950 5575 2950
+$EndSCHEMATC

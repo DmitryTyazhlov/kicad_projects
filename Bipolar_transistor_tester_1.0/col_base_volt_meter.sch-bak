@@ -1,0 +1,243 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:OP07 U4
+U 1 1 6262629F
+P 5750 3900
+F 0 "U4" H 5800 4150 50  0000 L CNN
+F 1 "OP07" H 5800 4050 50  0000 L CNN
+F 2 "" H 5800 3950 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 5800 4050 50  0001 C CNN
+	1    5750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay_SolidState:PVN012 D4
+U 1 1 62628190
+P 4950 3100
+F 0 "D4" V 4904 3288 50  0000 L CNN
+F 1 "PVN012" V 4995 3288 50  0000 L CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 4970 3300 50  0001 C CNN
+F 3 "" H 4970 3300 50  0001 C CNN
+	1    4950 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 6262A676
+P 4900 3800
+F 0 "R7" V 4693 3800 50  0000 C CNN
+F 1 "1M 1%" V 4784 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4830 3800 50  0001 C CNN
+F 3 "~" H 4900 3800 50  0001 C CNN
+	1    4900 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 6262A8A7
+P 5100 4500
+F 0 "R8" H 5170 4546 50  0000 L CNN
+F 1 "200k 1%" H 5170 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5030 4500 50  0001 C CNN
+F 3 "~" H 5100 4500 50  0001 C CNN
+	1    5100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay_SolidState:CPC1977 U3
+U 1 1 6262B7AF
+P 3300 4100
+F 0 "U3" V 3254 4288 50  0000 L CNN
+F 1 "CPC1977" V 3345 4288 50  0000 L CNN
+F 2 "" H 3300 4150 50  0001 C CNN
+F 3 "" H 3300 4150 50  0001 C CNN
+	1    3300 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay_SolidState:PVG612 Q1
+U 1 1 6262D049
+P 4200 4800
+F 0 "Q1" V 4246 4612 50  0000 R CNN
+F 1 "PVG612" V 4155 4612 50  0000 R CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 4200 4800 50  0001 L BNN
+F 3 "" H 4200 4800 50  0001 L BNN
+F 4 "International Rectifier" H 4200 4800 50  0001 L BNN "MANUFACTURER"
+	1    4200 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 3800 5100 3800
+Wire Wire Line
+	5100 4350 5100 4100
+Connection ~ 5100 3800
+Wire Wire Line
+	5100 3800 5450 3800
+Wire Wire Line
+	3400 3800 4650 3800
+Wire Wire Line
+	5050 3400 5050 3500
+Wire Wire Line
+	5050 3500 5100 3500
+Wire Wire Line
+	5100 3500 5100 3800
+Wire Wire Line
+	4850 3400 4650 3400
+Wire Wire Line
+	4650 3400 4650 3800
+Connection ~ 4650 3800
+Wire Wire Line
+	4650 3800 4750 3800
+Text HLabel 2550 3800 0    50   Input ~ 0
+coll_in
+Wire Wire Line
+	3200 3800 2550 3800
+Wire Wire Line
+	4300 4100 5100 4100
+Connection ~ 5100 4100
+Wire Wire Line
+	5100 4100 5100 3800
+Wire Wire Line
+	4300 4500 4300 4100
+Text HLabel 3900 4500 0    50   Input ~ 0
+base_in
+$Comp
+L power:+15V #PWR0108
+U 1 1 626391AB
+P 5650 3450
+F 0 "#PWR0108" H 5650 3300 50  0001 C CNN
+F 1 "+15V" H 5665 3623 50  0000 C CNN
+F 2 "" H 5650 3450 50  0001 C CNN
+F 3 "" H 5650 3450 50  0001 C CNN
+	1    5650 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3450 5650 3600
+$Comp
+L power:-15V #PWR0109
+U 1 1 62639872
+P 5650 4350
+F 0 "#PWR0109" H 5650 4450 50  0001 C CNN
+F 1 "-15V" H 5665 4523 50  0000 C CNN
+F 2 "" H 5650 4350 50  0001 C CNN
+F 3 "" H 5650 4350 50  0001 C CNN
+	1    5650 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5650 4350 5650 4200
+$Comp
+L power:GND #PWR0110
+U 1 1 6263A605
+P 5100 4750
+F 0 "#PWR0110" H 5100 4500 50  0001 C CNN
+F 1 "GND" H 5105 4577 50  0000 C CNN
+F 2 "" H 5100 4750 50  0001 C CNN
+F 3 "" H 5100 4750 50  0001 C CNN
+	1    5100 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4750 5100 4650
+Wire Wire Line
+	3850 4500 4100 4500
+NoConn ~ 4200 4500
+NoConn ~ 4950 3400
+$Comp
+L Device:R R9
+U 1 1 6263B5E8
+P 6500 3900
+F 0 "R9" V 6707 3900 50  0000 C CNN
+F 1 "100" V 6616 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6430 3900 50  0001 C CNN
+F 3 "~" H 6500 3900 50  0001 C CNN
+	1    6500 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 6263C2C4
+P 6850 4050
+F 0 "C3" H 6965 4096 50  0000 L CNN
+F 1 "100p" H 6965 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6888 3900 50  0001 C CNN
+F 3 "~" H 6850 4050 50  0001 C CNN
+	1    6850 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3900 6050 3900
+Wire Wire Line
+	6650 3900 6850 3900
+Text HLabel 7300 3900 2    50   Output ~ 0
+out
+Wire Wire Line
+	7300 3900 6850 3900
+Connection ~ 6850 3900
+$Comp
+L power:GND #PWR0111
+U 1 1 6263D5AF
+P 6850 4350
+F 0 "#PWR0111" H 6850 4100 50  0001 C CNN
+F 1 "GND" H 6855 4177 50  0000 C CNN
+F 2 "" H 6850 4350 50  0001 C CNN
+F 3 "" H 6850 4350 50  0001 C CNN
+	1    6850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4350 6850 4200
+$Comp
+L Device:R_POT RV2
+U 1 1 626405D9
+P 6250 4500
+F 0 "RV2" H 6180 4546 50  0000 R CNN
+F 1 "20k" H 6180 4455 50  0000 R CNN
+F 2 "" H 6250 4500 50  0001 C CNN
+F 3 "~" H 6250 4500 50  0001 C CNN
+	1    6250 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4350 6250 4200
+Wire Wire Line
+	6250 4200 5850 4200
+Wire Wire Line
+	5750 4200 5750 4350
+Wire Wire Line
+	5750 4350 5800 4350
+Wire Wire Line
+	5800 4350 5800 4700
+Wire Wire Line
+	5800 4700 6250 4700
+Wire Wire Line
+	6250 4700 6250 4650
+$Comp
+L power:+15V #PWR0112
+U 1 1 626436F2
+P 6400 4300
+F 0 "#PWR0112" H 6400 4150 50  0001 C CNN
+F 1 "+15V" H 6415 4473 50  0000 C CNN
+F 2 "" H 6400 4300 50  0001 C CNN
+F 3 "" H 6400 4300 50  0001 C CNN
+	1    6400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4300 6400 4500
+$EndSCHEMATC
