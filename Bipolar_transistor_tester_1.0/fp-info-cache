@@ -1,4 +1,4 @@
-19231027472717531
+19237632436336531
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6152,6 +6152,13 @@ banana socket
 0
 3
 3
+Connector
+CONN_63824-1
+
+
+0
+2
+2
 Connector
 CUI_PD-30
 3 pin connector, PD-30, http://www.cui.com/product/resource/pd-30.pdf
@@ -16765,12 +16772,33 @@ connector JST ZE horizontal
 18
 17
 Connector_KF2510
+KF2510_2pin
+
+
+0
+0
+0
+Connector_KF2510
+KF2510_3pin
+
+
+0
+0
+0
+Connector_KF2510
 KF2510_4pin
 
 
 0
 4
 4
+Connector_KF2510
+KF2510_5pin
+
+
+0
+0
+0
 Connector_KF2510
 KF2510_6pin
 
