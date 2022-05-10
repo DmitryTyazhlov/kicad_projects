@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 11
 Title ""
-Date ""
+Date "2022-04-25"
 Rev ""
 Comp ""
 Comment1 ""
@@ -34,58 +34,68 @@ coll_meas
 Wire Wire Line
 	6275 2450 5500 2450
 $Comp
-L Connector:Conn_01x01_Male J12
-U 1 1 62AE5BCB
-P 5300 2150
-F 0 "J12" H 5408 2331 50  0000 C CNN
-F 1 "DJ621-6.3" H 5408 2240 50  0000 C CNN
-F 2 "Connector:CONN_63824-1" H 5300 2150 50  0001 C CNN
-F 3 "~" H 5300 2150 50  0001 C CNN
-	1    5300 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J14
-U 1 1 62AE5F58
-P 5300 3750
-F 0 "J14" H 5408 3931 50  0000 C CNN
-F 1 "DJ621-6.3" H 5408 3840 50  0000 C CNN
-F 2 "Connector:CONN_63824-1" H 5300 3750 50  0001 C CNN
-F 3 "~" H 5300 3750 50  0001 C CNN
-	1    5300 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J15
-U 1 1 62AE6B77
-P 5300 4050
-F 0 "J15" H 5408 4231 50  0000 C CNN
-F 1 "DJ621-6.3" H 5408 4140 50  0000 C CNN
-F 2 "Connector:CONN_63824-1" H 5300 4050 50  0001 C CNN
-F 3 "~" H 5300 4050 50  0001 C CNN
-	1    5300 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J16
-U 1 1 62AE7081
+L Connector:Conn_01x01_Male J?
+U 1 1 627AAC5C
 P 5300 5500
-F 0 "J16" H 5408 5681 50  0000 C CNN
-F 1 "DJ621-6.3" H 5408 5590 50  0000 C CNN
-F 2 "Connector:CONN_63824-1" H 5300 5500 50  0001 C CNN
+AR Path="/62558B2F/627AAC5C" Ref="J?"  Part="1" 
+AR Path="/6253E238/627AAC5C" Ref="J29"  Part="1" 
+F 0 "J29" H 5272 5432 50  0000 R CNN
+F 1 "DJ621-6.3" H 5272 5523 50  0000 R CNN
+F 2 "Connector:Knife_Terminal_6.3mm_P5.00mm_Vertical" H 5300 5500 50  0001 C CNN
 F 3 "~" H 5300 5500 50  0001 C CNN
 	1    5300 5500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J13
-U 1 1 62AE8D91
+L Connector:Conn_01x01_Male J?
+U 1 1 627ACBD9
+P 5300 2150
+AR Path="/62558B2F/627ACBD9" Ref="J?"  Part="1" 
+AR Path="/6253E238/627ACBD9" Ref="J25"  Part="1" 
+F 0 "J25" H 5272 2082 50  0000 R CNN
+F 1 "DJ621-6.3" H 5272 2173 50  0000 R CNN
+F 2 "Connector:Knife_Terminal_6.3mm_P5.00mm_Vertical" H 5300 2150 50  0001 C CNN
+F 3 "~" H 5300 2150 50  0001 C CNN
+	1    5300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 627AD11A
 P 5300 2450
-F 0 "J13" H 5408 2631 50  0000 C CNN
-F 1 "DJ621-6.3" H 5408 2540 50  0000 C CNN
-F 2 "Connector:CONN_63824-1" H 5300 2450 50  0001 C CNN
+AR Path="/62558B2F/627AD11A" Ref="J?"  Part="1" 
+AR Path="/6253E238/627AD11A" Ref="J26"  Part="1" 
+F 0 "J26" H 5272 2382 50  0000 R CNN
+F 1 "DJ621-6.3" H 5272 2473 50  0000 R CNN
+F 2 "Connector:Knife_Terminal_6.3mm_P5.00mm_Vertical" H 5300 2450 50  0001 C CNN
 F 3 "~" H 5300 2450 50  0001 C CNN
 	1    5300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 627AD706
+P 5300 3750
+AR Path="/62558B2F/627AD706" Ref="J?"  Part="1" 
+AR Path="/6253E238/627AD706" Ref="J27"  Part="1" 
+F 0 "J27" H 5272 3682 50  0000 R CNN
+F 1 "DJ621-6.3" H 5272 3773 50  0000 R CNN
+F 2 "Connector:Knife_Terminal_6.3mm_P5.00mm_Vertical" H 5300 3750 50  0001 C CNN
+F 3 "~" H 5300 3750 50  0001 C CNN
+	1    5300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 627ADCD8
+P 5300 4050
+AR Path="/62558B2F/627ADCD8" Ref="J?"  Part="1" 
+AR Path="/6253E238/627ADCD8" Ref="J28"  Part="1" 
+F 0 "J28" H 5272 3982 50  0000 R CNN
+F 1 "DJ621-6.3" H 5272 4073 50  0000 R CNN
+F 2 "Connector:Knife_Terminal_6.3mm_P5.00mm_Vertical" H 5300 4050 50  0001 C CNN
+F 3 "~" H 5300 4050 50  0001 C CNN
+	1    5300 4050
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

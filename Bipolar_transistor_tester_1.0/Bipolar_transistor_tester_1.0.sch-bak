@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 11
 Title ""
-Date ""
+Date "2022-04-25"
 Rev ""
 Comp ""
 Comment1 ""
@@ -41,7 +41,7 @@ U 62559320
 F0 "emitter_current_meter" 50
 F1 "emitter_cur_meter.sch" 50
 F2 "in" I L 5500 5750 50 
-F3 "gnd" I L 5500 6050 50 
+F3 "to_gnd" I L 5500 6050 50 
 $EndSheet
 $Sheet
 S 7800 3650 1550 1050
@@ -245,8 +245,8 @@ L Device:R R?
 U 1 1 62871593
 P 4650 5100
 AR Path="/62559320/62871593" Ref="R?"  Part="1" 
-AR Path="/62871593" Ref="R?"  Part="1" 
-F 0 "R?" V 4443 5100 50  0000 C CNN
+AR Path="/62871593" Ref="R1"  Part="1" 
+F 0 "R1" V 4443 5100 50  0000 C CNN
 F 1 "1k 1%" V 4534 5100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 5100 50  0001 C CNN
 F 3 "~" H 4650 5100 50  0001 C CNN
@@ -260,8 +260,8 @@ L Device:R R?
 U 1 1 628792CA
 P 4650 5650
 AR Path="/62559320/628792CA" Ref="R?"  Part="1" 
-AR Path="/628792CA" Ref="R?"  Part="1" 
-F 0 "R?" V 4443 5650 50  0000 C CNN
+AR Path="/628792CA" Ref="R2"  Part="1" 
+F 0 "R2" V 4443 5650 50  0000 C CNN
 F 1 "1k 1%" V 4534 5650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 5650 50  0001 C CNN
 F 3 "~" H 4650 5650 50  0001 C CNN
@@ -277,4 +277,70 @@ Wire Wire Line
 	4600 6000 4750 6000
 Text GLabel 4600 6000 0    50   Input ~ 0
 4_rp2
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 626E66A2
+P -1200 2100
+F 0 "H1" H -1100 2146 50  0000 L CNN
+F 1 "MountingHole" H -1100 2055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H -1200 2100 50  0001 C CNN
+F 3 "~" H -1200 2100 50  0001 C CNN
+	1    -1200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 626E80C8
+P -1200 2400
+F 0 "H2" H -1100 2446 50  0000 L CNN
+F 1 "MountingHole" H -1100 2355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H -1200 2400 50  0001 C CNN
+F 3 "~" H -1200 2400 50  0001 C CNN
+	1    -1200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 626E8367
+P -1200 2700
+F 0 "H3" H -1100 2746 50  0000 L CNN
+F 1 "MountingHole" H -1100 2655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H -1200 2700 50  0001 C CNN
+F 3 "~" H -1200 2700 50  0001 C CNN
+	1    -1200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 626E870D
+P -1200 3000
+F 0 "H4" H -1100 3046 50  0000 L CNN
+F 1 "MountingHole" H -1100 2955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H -1200 3000 50  0001 C CNN
+F 3 "~" H -1200 3000 50  0001 C CNN
+	1    -1200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 6273A0A9
+P -1200 3300
+F 0 "H5" H -1100 3346 50  0000 L CNN
+F 1 "MountingHole" H -1100 3255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H -1200 3300 50  0001 C CNN
+F 3 "~" H -1200 3300 50  0001 C CNN
+	1    -1200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 6273A0AF
+P -1200 3600
+F 0 "H6" H -1100 3646 50  0000 L CNN
+F 1 "MountingHole" H -1100 3555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H -1200 3600 50  0001 C CNN
+F 3 "~" H -1200 3600 50  0001 C CNN
+	1    -1200 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
