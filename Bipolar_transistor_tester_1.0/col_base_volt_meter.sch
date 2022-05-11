@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 11
-Title ""
-Date "2022-04-25"
-Rev ""
+Title "Bipolar transistor tester"
+Date "2022-05-11"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
