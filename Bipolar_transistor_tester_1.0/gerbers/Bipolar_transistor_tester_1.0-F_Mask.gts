@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,(5.1.10-1-10_14)*%
-%TF.CreationDate,2022-05-12T12:23:04+03:00*%
+%TF.CreationDate,2022-05-12T15:36:39+03:00*%
 %TF.ProjectId,Bipolar_transistor_tester_1.0,4269706f-6c61-4725-9f74-72616e736973,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Top*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.10-1-10_14)) date 2022-05-12 12:23:04*
+G04 Created by KiCad (PCBNEW (5.1.10-1-10_14)) date 2022-05-12 15:36:39*
 %MOMM*%
 %LPD*%
 G01*
