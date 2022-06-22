@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 11
-Title ""
-Date "2022-04-25"
-Rev ""
+Title "Bipolar transistor tester"
+Date "2022-05-11"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Amplifier_Operational:OP07 U25
+L Amplifier_Operational:OP07 U24
 U 1 1 6262629F
 P 7250 3250
-F 0 "U25" H 7300 3500 50  0000 L CNN
+F 0 "U24" H 7300 3500 50  0000 L CNN
 F 1 "OP07" H 7300 3400 50  0000 L CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 7300 3300 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 7300 3400 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pd
 	1    0    0    -1  
 $EndComp
 $Comp
-L Relay_SolidState:PVN012 U24
+L Relay_SolidState:PVN012 U25
 U 1 1 62628190
 P 6450 2450
-F 0 "U24" V 6404 2638 50  0000 L CNN
+F 0 "U25" V 6404 2638 50  0000 L CNN
 F 1 "PVN012" V 6495 2638 50  0000 L CNN
 F 2 "Package_DIP:DIP-6_W7.62mm" H 6470 2650 50  0001 C CNN
 F 3 "" H 6470 2650 50  0001 C CNN
@@ -341,7 +341,7 @@ L Device:R R44
 U 1 1 62832F02
 P 4700 4000
 F 0 "R44" H 4550 3950 50  0000 C CNN
-F 1 "1k 1%" H 4500 4050 50  0000 C CNN
+F 1 "270" H 4500 4050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4630 4000 50  0001 C CNN
 F 3 "~" H 4700 4000 50  0001 C CNN
 	1    4700 4000

@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 11
-Title ""
-Date "2022-04-25"
-Rev ""
+Title "Bipolar transistor tester"
+Date "2022-05-11"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -373,7 +373,7 @@ L Device:R R61
 U 1 1 627FF865
 P 5050 1850
 F 0 "R61" V 5150 1850 50  0000 C CNN
-F 1 "1k 1%" V 5250 1850 50  0000 C CNN
+F 1 "270" V 5250 1850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4980 1850 50  0001 C CNN
 F 3 "~" H 5050 1850 50  0001 C CNN
 	1    5050 1850
@@ -405,7 +405,7 @@ L Device:R R67
 U 1 1 628067B9
 P 7950 4400
 F 0 "R67" V 7850 4400 50  0000 C CNN
-F 1 "1k 1%" V 7750 4400 50  0000 C CNN
+F 1 "270" V 7750 4400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7880 4400 50  0001 C CNN
 F 3 "~" H 7950 4400 50  0001 C CNN
 	1    7950 4400
